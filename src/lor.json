@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Frodo Baggins",
+        "value": "Frodo Baggins",
+        "image": "https://i.pinimg.com/originals/b7/30/08/b73008523061585de3d9354a68af50b7.png",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Samwise Gamgee",
+        "value": "Samwise Gamgee",
+        "image": "https://i.pinimg.com/originals/d2/d2/83/d2d28345d9a5f3f5e1d098212224b3a9.jpg",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Aragorn II Elessar",
+        "value": "Aragorn II Elessar",
+        "image": "https://i.pinimg.com/originals/db/48/2f/db482f52e52360ac9f61e8ad5a5146c4.jpg",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Frodo Baggins",
+        "value": "Frodo Baggins",
+        "image": "https://i.pinimg.com/originals/b7/30/08/b73008523061585de3d9354a68af50b7.png",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Samwise Gamgee",
+        "value": "Samwise Gamgee",
+        "image": "https://i.pinimg.com/originals/d2/d2/83/d2d28345d9a5f3f5e1d098212224b3a9.jpg",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Aragorn II Elessar",
+        "value": "Aragorn II Elessar",
+        "image": "https://i.pinimg.com/originals/db/48/2f/db482f52e52360ac9f61e8ad5a5146c4.jpg",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Frodo Baggins",
+        "value": "Frodo Baggins",
+        "image": "https://i.pinimg.com/originals/b7/30/08/b73008523061585de3d9354a68af50b7.png",
+        "category": "Lord of the Rings"
+    },
+    {
+        "name": "Samwise Gamgee",
+        "value": "Samwise Gamgee",
+        "image": "https://i.pinimg.com/originals/d2/d2/83/d2d28345d9a5f3f5e1d098212224b3a9.jpg",
+        "category": "Lord of the Rings"
+    }
+]
