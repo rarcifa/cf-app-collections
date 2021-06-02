@@ -29,8 +29,8 @@ interface DialogProps {
     sdk: FieldExtensionSDK;
 }
 
-/** An Item which represents an list item of the repeater app */
-interface Item {
+/** An Collection which represents an list Collection of the repeater app */
+interface Collection {
     id: string;
     list: [
         {
@@ -46,17 +46,17 @@ const grid = <FontAwesomeIcon icon={faTh} />
 const list = <FontAwesomeIcon icon={faThList} />
 
 
-/** A simple utility function to create a 'blank' item
- * @returns A blank `Item` with a uuid
+/** A simple utility function to create a 'blank' Collection
+ * @returns A blank `Collection` with a uuid
 */
-function createStarwars(): Item {
+function createStarwars(): Collection {
     return {
         id: uuid(),
         list: require('../starwars.json')
     };
 }
 
-function createLor(): Item {
+function createLor(): Collection {
     return {
         id: uuid(),
         list: require('../lor.json')
@@ -69,41 +69,41 @@ function createLor(): Item {
  * The Field expects and uses a `Contentful JSON field`
  */
 const Field = (props: DialogProps) => {
-    const [collections, setcollections] = useState<Item[]>([]);
+    const [collections, setcollections] = useState<Collection[]>([]);
 
     useEffect(() => {
         // This ensures our app has enough space to render
         props.sdk.window.startAutoResizer();
 
         // Every time we change the value on the field, we update internal state
-        props.sdk.field.onValueChanged((value: Item[]) => {
+        props.sdk.field.onValueChanged((value: Collection[]) => {
             if (Array.isArray(value)) {
                 setcollections(value);
             }
         });
     });
 
-    /** Adds another item to the list */
+    /** Adds another Collection to the list */
     const addNewStarwars = () => {
         props.sdk.field.setValue([...collections, createStarwars()]);
     };
 
-    /** Adds another item to the list */
+    /** Adds another Collection to the list */
     const addNewLor = () => {
         props.sdk.field.setValue([...collections, createLor()]);
     };
 
-    /** Deletes an item from the list */
-    const deleteItem = (item: Item) => {
-        props.sdk.field.setValue(collections.filter((i) => i.id !== item.id));
+    /** Deletes an Collection from the list */
+    const deleteCollection = (Collection: Collection) => {
+        props.sdk.field.setValue(collections.filter((i) => i.id !== Collection.id));
     };
 
     // Dropdown Function
     const [isOpen, setOpen] = React.useState(false);
 
     // List of collections 
-    const productList = collections.map((item) => (
-        item.list.map((i) => (
+    const productList = collections.map((Collection) => (
+        Collection.list.map((i) => (
             <Card className="css-pivbrds" data-test-id="cf-ui-card">
                 <Flex
                     className="margin-1"
@@ -135,7 +135,7 @@ const Field = (props: DialogProps) => {
         ))))
 
     // Grid View of collections 
-    const productGrid = collections.map((item) => (item.list.map((i) => (
+    const productGrid = collections.map((Collection) => (Collection.list.map((i) => (
         <>
         <Card className="css-pivbrds" data-test-id="cf-ui-card">
           <div className="margin-1">
@@ -228,12 +228,12 @@ const Field = (props: DialogProps) => {
             </Tabs>
 
             {/** remove list loop */}
-            {collections.map((item) => (
+            {collections.map((Collection) => (
                 <Pill
-                    testId="pill-item"
+                    testId="pill-Collection"
                     className="marginTop-1"
                     label={collections[0].list[0].category}
-                    onClose={() => deleteItem(item)}
+                    onClose={() => deleteCollection(Collection)}
                 />
             ))} </>
             /** end loop */
