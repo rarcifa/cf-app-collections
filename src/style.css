@@ -19,10 +19,32 @@ text-indent: 0.1rem;
 font-weight: 500;
 }
 
+.padding {
+  padding: 10px
+}
+
+.margin {
+  margin: 10px
+}
 .marginTop-1 {
   margin-top: 1rem;
 }
 
+.marginBottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-auto {
+  margin-left: 38%;
+}
+
+.Modal__Modal__overlay___3gPyC {
+  background-color: white!important;
+  border-radius: 8px;
+}
+.marginL {
+  margin-left: 10px;
+}
 body {
     font-family: var(--font-stack-primary);
     font-size: 14px;

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Kartoffelgratin",
+        "value": "59dc75bc30d7de000e485117",
+        "image": "http://res.cloudinary.com/saas-ag/image/upload/v1546873941/saastest2/content/86be29e6-e3b4-4c70-a5cc-dd44863e6e58.jpg",
+        "category": "Recipes"
+    },
+    {
+        "name": "Kürbis-Mandel Kuchen",
+        "value": "5c6ac12fbb23460006767b92",
+        "image": "http://res.cloudinary.com/saas-ag/image/upload/v1546873930/saastest2/content/4e2e097e-8e7e-4168-a544-07f1bd508190.jpg",
+        "category": "Recipes"
+    },
+    {
+        "name": "testing Recipies",
+        "value": "5c6ac12fbb23460006767b92",
+        "image": "http://res.cloudinary.com/saas-ag/image/upload/v1546873930/saastest2/content/4e2e097e-8e7e-4168-a544-07f1bd508190.jpg",
+        "category": "Recipes"
+    }
+]

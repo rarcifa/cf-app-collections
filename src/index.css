@@ -28,6 +28,11 @@ div {
     transform: translate(-50%, -50%);
 }
 
+.Card__Card--padding-default___xgDF9 {
+  padding: 0px!important;
+}
+
+
 .css-k008qs {
   display: flex;
 }
